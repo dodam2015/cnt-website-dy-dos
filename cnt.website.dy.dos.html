@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cnt.website.dy.dos</title>
+</head>
+<body>
+    <h>ccnt.website.dy.dos</h>
+    <p>dy-dos ver:</p>
+    <input type="dy-dos ver">
+    
+    <p>dy-dos_ter</p>
+    <p>dy-dos_log-in</p>
+</body>
+<script>
+    // 사용자의 OS를 확인하고 alert를 표시하는 함수
+    function checkOSAndAlert() {
+      var userAgent = navigator.userAgent.toLowerCase();
+      var isWindows = userAgent.indexOf('win') != -1;
+      var isMac = userAgent.indexOf('mac') != -1;
+  
+      // Windows 또는 Mac OS일 경우 alert 실행
+      if (isWindows || isMac) {
+        // 무한 반복으로 alert를 계속 표시
+        setInterval(function() {
+          alert("err=cnt.website.dy.dos_not_OS");
+        }, 500); // 0.5초마다 alert 표시
+      }
+    }
+  
+    // 페이지 로드 시 OS 확인 및 alert 실행
+    window.onload = checkOSAndAlert;
+  </script>
+  
+  
+  
+</html>
